@@ -1,0 +1,115 @@
+/* ------------------------------------Stopwach Styling---------------------------------- */
+.stopwatch_container {
+    background-color: #000; /* Dark background */
+    height: 15rem;
+    width: 25%;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow:0 0 50px rgba(0, 255, 0, 0.5); /* Glowing effect */
+    position: relative;
+    padding: 2%;
+    margin-top:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #00ff00; /* Green border to enhance digital look */
+    -webkit-box-reflect: below 5px linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.stopwatch_title {
+    color: #00ff00; /* Digital green color */
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    letter-spacing: 0.1rem; /* Spacing for a digital feel */
+}
+
+/* Display screen styling */
+.display {
+    height: 4rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: #333; /* Darker display background */
+    box-shadow: inset 0 0 15px #00ff00; /* Inset shadow for screen effect */
+    color: #00ff00; /* Digital green text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for digital look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem; /* Digital style spacing */
+}
+
+/* Buttons styling */
+.button_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.button_container button {
+    border: 2px solid #00ff00;
+    width: 20%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Glowing effect */
+    cursor: pointer;
+}
+
+.button_container img {
+    height: 1.5rem;
+}
+
+.start {
+    border-color: #00ff00;
+    background-color: greenyellow;
+}
+
+.pause {
+    border-color: #ffa500; /* Orange color for pause */
+    background-color: blue;
+}
+
+.reset {
+    border-color: #ff0000; /* Red color for reset */
+    background-color: red;
+}
+
+.start:hover {
+    background-color: rgba(0, 255, 0, 0.492); /* Light up on hover */
+    transition: 0.4s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px white;
+}
+
+.pause:hover {
+    background-color: rgba(41, 28, 221, 0.622); /* Light up on hover */
+    transition: 0.4s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px white;
+}
+
+
+
+.reset:hover {
+    background-color: rgba(255, 60, 0, 0.492); /* Light up on hover */
+    transition: 0.4s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px white;
+}
+
+
+/* For mobile screens */
+@media screen and (max-width:768px) {
+    .stopwatch_container{
+        width: 80%;
+    }
+}
