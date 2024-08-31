@@ -2,7 +2,7 @@
 Developed a StopWatch application using React.
 
 ## Hosted Link:
-### 
+### https://sinhakhushitherockc2.github.io/React-Stopwatch-application/
 
 ## Features:
 * Start the timer.
@@ -41,7 +41,7 @@ Follow these steps to get the project up and running on your local system:
 
 1. Clone the repository to your local machine:
 ```bash
-  
+  https://github.com/SinhaKhushiTheRockc2/React-Stopwatch-application
 ```
 2. Navigate to the root directory of the project:
 
